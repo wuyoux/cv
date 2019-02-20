@@ -2,7 +2,18 @@
 <html lang="en">
 
   <head>
+    
+    <script type="text/javascript">
+      <!--
+        if (screen.width <= 699) {
+          document.location = "mobile.html";
+        }
+      //-->
+    </script>
 
+    <!-- google verify-->
+    <meta name="google-site-verification" content="T2VkT9piXFokmzJoOI022w7hFhYKFULCOYbUidCZRYA" />
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -10,24 +21,105 @@
 
     <title>Wuyou Xie</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Small Icon on Browser Tab-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg" />
+    
+    <link href="img/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="img/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/agencynobackground.css" rel="stylesheet">
+
+    <style type="text/css">
+            /* attempt at image grid*/
+      .row-table {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .columbnText{
+        flex: 25%;
+        max-width:50%
+        padding: 0 10px;
+      }
+      
+      .columbn {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 10px;
+      }
+
+      .columbn img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      
+  .zoom:hover {
+      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transition-duration: 0.5s;
+  }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .columbn {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .columbn {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .dan
+      {
+        color: blue;
+        font-size: 1000px;
+        line-height: 1000px;
+      }
+      
+      .videosize {
+        position:absolute;
+        z-index:-1;
+        top:0;
+        left:-5%;
+        /*width:100%;*/ 
+        height:100%;
+        width: 110%;
+      }
+      
+      .bioTitle{
+        margin: 20px 30px 0px 30px;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      }
+
+      .bio{
+        max-width: 500px;
+        font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        margin: 20px 30px 20px 40px;
+        font-size: 20px;
+        color: rgb(47,79,79);
+      }
+    </style>
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
@@ -38,17 +130,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-            </li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
@@ -60,109 +149,52 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <div class="intro-text">
-          <!-- <div class="intro-lead-in">a</div> -->
-          <br>
-          <br>
-          <br>
-          <div class="intro-heading text-uppercase">Wuyou Xie</div>
-          <br> 
-          <br>
-          <br>
-          <br>
-          <br>
-          <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
-          <br>
-        </div>
+        <div class="intro-text" style="line-height: 140%">
+            <div class="intro-lead-in"></div>
+            <div class="intro-heading text-uppercase"></div>
+            </div>
+          <div style="width: 100%">
+            <video class="hidden-xs hidden-sm hidden-md hidden-custom videosize embed-responsive-item" autoplay loop id ="video-background" muted plays-inline width=200%>
+              <source src="img/546678.mp4" type="video/mp4">   
+            </video>
+          </div>
       </div>
     </header>
-
-    <!--<sectio id="About Me">
-      <div class="container">
-        <div>
-          <H1>Hi my name is Wuyou</H1>
-        </div>
-      </div>
-    </section>-->
 
     <!-- Change this to about me -->
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About Me:</h2>
-            <h3 class="section-subheading text-muted"><q>If you want it done right, do it yourself.</q><br>-Charles-Gillaume Etienne<br><br> Hi my name is Wuyou Xie and I am a student at Plano West Senior High School. My hobies include physics, computer science, math, and practically anything that involves the phrase "Do it yourself" or hands on work.</h3>
-          </div>
-        </div>
-        <!--
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
-              
-            </span>
-            <h4 class="service-heading">Hardware</h4>
-            <p class="text-muted">Watches, Computers, Quadcopters</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Software</h4>
-            <p class="text-muted">Computer Science, Web Development, Robotics</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-school fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Academia</h4>
-            <p class="text-muted">School Related Endevors</p>
-          </div>
-        </div> -->
-
-        <div class="row"> 
-          <div class="column">
-            <img src="../01-full.jpg">
-            <img src="rocks.jpg">
-            <img src="falls2.jpg">
-            <img src="paris.jpg">
-            <img src="nature.jpg">
-            <img src="mist.jpg">
-            <img src="paris.jpg">
-          </div>
-          <div class="column">
-            <img src="underwater.jpg">
-            <img src="ocean.jpg">
-            <img src="wedding.jpg">
-            <img src="mountainskies.jpg">
-            <img src="rocks.jpg">
-            <img src="underwater.jpg">
-          </div> 
-          <div class="column">
-            <img src="wedding.jpg">
-            <img src="rocks.jpg">
-            <img src="falls2.jpg">
-            <img src="paris.jpg">
-            <img src="nature.jpg">
-            <img src="mist.jpg">
-            <img src="paris.jpg">
-          </div>
-          <div class="column">
-            <img src="underwater.jpg">
-            <img src="ocean.jpg">
-            <img src="wedding.jpg">
-            <img src="mountainskies.jpg">
-            <img src="rocks.jpg">
-            <img src="underwater.jpg">
+            <h2 class="section-heading text-uppercase"><br>About Me:</h2>
+            <h3 class="section-subheading text-muted"><q>If you want it done right, do it yourself.</q><br>-Charles-Gillaume Etienne<br></h3>
           </div>
         </div>
 
-        <!-- bottom of the page spaces-->
-        <br>
-        <br>
+       <div class="row-table"> 
+        <div class="columbnText">
+          <div class="bioTitle">
+            Hi!
+          </div>
+          <div class="bio text-muted">
+            My name is Wuyou Xie and I am a senior at Plano West Senior High School. I plan on majoring in Physics at the University of Texas at Austin in the coming school year. Personally, I am interested in anything related to the disciplines of Engineering and Science. I love persuing side projects (like this site) in accordance with my academic goals. Personally, I place emphasis on the do-it-yourself spirit as well as the idea of continual personal improvement. The posts and articles on this site are mainly a way for me to hold myself accountable to finish things in a timely and efficient manner. Hopefully, some of these won't be as dull and uninteresting as I fear them to be...
+          </div>
+        </div>
+
+      <!-- THIS IS THE COLLAGE ---- THE IMAGE SIZE NEEDS TO BE 263px (25% of total) in width -->
+        <div class="columbn">
+          <img class="zoom" src="img/Collage/1.jpg">
+          <img class="zoom" src="img/Collage/2.jpg">
+          <img class="zoom" src="img/Collage/4.jpg">
+          <img class="zoom" src="img/Collage/7.jpg">
+        </div>
+        <div class="columbn">
+          <img class="zoom" src="img/Collage/8.jpg">
+          <img class="zoom" src="img/Collage/6.jpg">
+          <img class="zoom" src="img/Collage/3.jpg">
+          <img class="zoom" src="img/Collage/5.jpg">
+        </div>
+        </div>
       </div>
     </section>
 
@@ -201,7 +233,7 @@
               <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Computers</h4>
+              <h4>Hardware</h4>
               <p class="text-muted"><br></p>
             </div>
           </div>
@@ -243,7 +275,7 @@
               <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Whats Happining at University</h4>
+              <h4>How Badly I'm Failing at Life</h4>
               <p class="text-muted"></p>
             </div>
           </div>
@@ -265,213 +297,13 @@
       </div>
     </section>
 
-    <!-- About 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Team 
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
-      </div>
-    </section>-->
-
-    <!-- Clients -->
-    <!--<section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact -->
+    <!-- Contact Me-->
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Me</h2>
-            <h3 class="section-subheading text-muted">I'm usually <s>pretty good</s> at responding(maybe).<br><p>semi-decent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></h3>
+            <h2 class="section-heading text-uppercase">Contact Me<br></h2>
+            <h3 class="section-subheading blacktext">I'm usually <s>pretty good</s> at responding(maybe).<br><p>semi-decent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br><br></h3>
           </div>
         </div>
         <div class="row">
@@ -501,7 +333,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase blue" type="submit">Send Message</button>
                 </div>
               </div>
             </form>
@@ -569,7 +401,7 @@
                   <h2 class="text-uppercase">Watches</h2>
                   <p class="item-intro text-muted">Amature watch repairs and watch enthusiast.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Right so I don't have a trust fund (Not saying theres anything wrong with having one, just that I don't) so i can't afford an Omega, Rolex, or any semi-decent automatic watch so I'm making my own. Currently planning on using the ETA 2824-02 movement. These are suprisingly aviable and cheap at around $30 a piece. </p>
+                  <p>Right so I don't have a trust fund (Not saying theres anything wrong with having one, just that I don't) so i can't afford an Omega, Rolex, or any semi-decent automatic watch so I'm making my own - How hard can it be? I mean all the major brands out something like an ETA movement into their cases, slap their brand name on it, and up sell it for hundreds if not thousands of dollars (Btw an ETA 2824 clone is about $30). So time to slap one of those puppies in a case and see how well this turns out. </p>
                   <ul class="list-inline">
                     <li>Date Started: December, 2018</li>
                     <!-- <li>Client: Threads</li>
@@ -600,14 +432,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Watches</h2>
-                  <p class="item-intro text-muted">Amature hobbiest, and watch enthusiest</p>
+                  <h2 class="text-uppercase">Hardware</h2>
+                  <p class="item-intro text-muted">I build PC's? Hopefully this turns out to be something interesting...</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>I've been building PC's for quite a long time - actually since the sixth grade. Ever since building my first rig, I've been hooked. Here will be some of my projects with my setup and PC as well as some other engineering projects in general. Maybe time to try to build a better bomi arm then a scio god?</p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -634,14 +466,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Coding</h2>
+                  <p class="item-intro text-muted">Website design??</p>
+                  <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt=""> -->
+                  <p>Welp web design is a lot easier then I thought. Seriously, its literally copy and paste coding. Maybe I'm making it too simple and also I copied a lot of the HTML and CSS but oh well XD.</p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -668,14 +500,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2 class="text-uppercase">Physics</h2>
+                  <p class="item-intro text-muted">Hm let's see how well hard being a physics major can be...</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>Previous F=MA exam answers will be posted as soon as I can find where I stored them (which is hopefully soon). </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -702,14 +534,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2 class="text-uppercase">Life</h2>
+                  <p class="item-intro text-muted">Just saying but I really don't have a life so... not much is going to be here.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -736,14 +568,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2 class="text-uppercase">Random Stuff</h2>
+                  <p class="item-intro text-muted">Lowkey I wouldn't be suprised if this was the longest section on this site.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>Everything that doesn't fit anywhere else - or maybe I'm just too lazy to incooperate it to one of the other pages.</p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -757,11 +589,11 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="img/jquery/jquery.min.js"></script>
+    <script src="img/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="img/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
@@ -773,3 +605,5 @@
   </body>
 
 </html>
+
+
