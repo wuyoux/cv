@@ -42,6 +42,11 @@
     <link href="css/agencynobackground.css" rel="stylesheet">
 
     <style type="text/css">
+    #myVideo {
+  		position: absolute;
+ 		width: 100%;
+ 		left: -5%;
+	}
 
     </style>
 
@@ -78,13 +83,18 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container">
+    	<div class="container">
+    	<video autoplay muted loop id="myVideo">
+  			<source src="img/546678.mp4" type="video/mp4">
+		</video>
+	</div>
+      <!--<div class="container">
         <div style="width: 100%">
           <video class="hidden-xs hidden-sm hidden-md hidden-custom videosize embed-responsive-item" autoplay loop id ="video-background" muted plays-inline width=200%>
            <source src="img/546678.mp4" type="video/mp4">   
           </video>
         </div>
-      </div>
+      </div>-->
     </header>
 
     <!-- Change this to about me -->
